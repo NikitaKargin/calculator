@@ -36,7 +36,7 @@ void printHelp() {
    cout << " -o операция задает операцию (multiply или divide)" << endl;
    cout << " -h Вывести справку" << endl;
    cout << "Операнды:" << endl;
-   cout << "От 2 до 4 операндов" << endl;
+   cout << "От 3 до 5 операндов" << endl;
    }
 
 int main(int argc, char* argv[]) {
@@ -63,11 +63,11 @@ int main(int argc, char* argv[]) {
 		operands.push_back(operand);
 	}
 	
-    if (operation.empty() || operands.size()<2) {
+    if (operation.empty() || operands.size()<3) {
 		cout << "Недостаточно параметров" << endl;
 		return 1;
 	}
-	if (operands.size()>4) {
+	if (operands.size()>5) {
 		cout << "Много параметров" << endl;
 		return 1;
 	}
